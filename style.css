@@ -1,0 +1,232 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('za\ desktop.jpg');
+    background-size: cover;
+    background-blend-mode:overlay;
+    background-position: center;
+    color: #fff;
+    transition: background-image 0.3s ease; 
+    height: 95vh;
+    
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: red;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: grey;
+    margin-top: 10px;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+/* Main content section */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: red;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: grey;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: grey;
+    font-size: 1rem;
+}
+.hamburger-menu {
+    display: none;
+}
+
+
+
+/* Responsive Design */
+
+/* For screens smaller than 768px (tablets, large phones) */
+@media (max-width: 768px) {
+    body {
+        background-image: url('za\ mobitel.jpg'); /* Same background or change to a mobile-specific one */
+        background-size: cover;
+        background-position: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* Smaller heading */
+    }
+
+    header p {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+
+    nav a {
+        font-size: 1rem; /* Smaller links */
+        padding: 10px 15px;
+        margin: 0 10px;
+    }
+
+    .main-content {
+        padding: 30px 15px; /* Reduced padding */
+    }
+
+    section h2 {
+        font-size: 2rem; /* Smaller headings */
+    }
+
+    section p {
+        font-size: 1rem; /* Adjusted text size for better readability */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Smaller footer text */
+    }
+}
+
+/* For screens smaller than 480px (small phones) */
+@media (max-width: 480px) {
+    body {
+        background-image: url('za\ mobitel.jpg'); /* Or use a smaller, different background image */
+        background-size: 5vw 5vh;
+        background-position: center;
+        backg
+        
+        
+    }
+
+    header h1 {
+        font-size: 2rem; /* Even smaller heading */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    
+    
+
+    .desktop-menu {
+        display: none; /* Ensure desktop menu is hidden */
+    }
+
+    .hamburger {
+        display: block; /* Make the hamburger icon visible */
+        position: absolute; /* Position it on top of other elements */
+        top: 20px; /* Adjust to your preference */
+        right: 20px; /* Adjust to your preference */
+        z-index: 1000; /* Ensure it is on top of other elements */
+        cursor: pointer;
+        color: white;
+        font-size: 2rem; /* Icon size */
+    }
+
+    .hamburger-menu {
+        
+        position: absolute;
+        top: 60px; /* Below the hamburger icon */
+        right: 10px; /* Align with the hamburger icon */
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 999; /* Ensure it is above most elements */
+    }
+
+    .hamburger-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .hamburger-menu a:hover {
+        background-color: red;
+    }
+
+    .hamburger-menu.open {
+        display: block; /* Show the menu when "open" class is added */
+    }
+    .main-content {
+        padding: 20px 10px; /* Reduced padding */
+    }
+
+    section h2 {
+        font-size: 1.8rem; /* Adjusted heading size */
+    }
+
+    section p {
+        font-size: 0.9rem; /* Adjusted text size */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Smaller footer text */
+    }
+   
+}
